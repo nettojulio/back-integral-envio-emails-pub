@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <title>Welcome</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            height: 100vh
+        }
+
+        header,
+        footer {
+            height: 15%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 70%;
+            background-color: #f0f0f0;
+        }
+
+        .main-box,
+        .greeting-box,
+        .email-box {
+            background-color: #ffffff;
+            border: 2px solid #d0d0d0;
+            box-shadow: 0px 5px 5px 0px #00000099;
+        }
+
+        .main-box {
+            margin: 80px 0 0 0;
+            width: 500px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-box p {
+            margin: 40px 0;
+            width: 90%;
+            text-align: center;
+        }
+
+        .email-box {
+            padding: 10px 120px;
+        }
+
+        .team-box {
+            margin: 30px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            width: 550px;
+        }
+
+        .greeting-box {
+            height: 80px;
+            width: 250px;
+            padding: 15px;
+        }
+
+        .greeting-box p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #00000090;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-color: #ffffff;">
+        <h1>Thanks, {{ name }}</h1>
+    </header>
+    <main>
+        <div class="main-box">
+            <p>We registered your subscription with the email:</p>
+            <div class="email-box">
+                <p>{{ email }}</p>
+            </div>
+        </div>
+        <div class="team-box">
+            <div class="greeting-box">
+                <h4>Cubos Newsletter</h4>
+                <p>Newsletter Cubos Academy</p>
+            </div>
+            <div class="greeting-box">
+                <h4>Júlio Neto</h4>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: #ffffff;">
+        Cubos Academy <br> Alameda Salvador, 1058 <br> Caminho das Árvores, Salvador - BA <br> 41820-790
+    </footer>
+</body>
+
+</html>
